@@ -52,4 +52,14 @@ public class Steps {
     public void the_company_logo_should_be_present_in_the_login_form() {
         System.out.println("The company logo is present in the login form");
     }
+
+    @When("the user clicks on Forgot Username")
+    public void the_user_clicks_on_forgot_username() {
+        System.out.println("The user clicked on forgot username link");
+    }
+
+    @Then("the user should be navigated to the first page of forgot username flow")
+    public void the_user_should_be_navigated_to_the_first_page_of_forgot_username_flow() {
+        System.out.println("The user is on verify and confirm email address for password reset page");
+    }
 }

@@ -20,3 +20,9 @@ Feature: Web Login
   Scenario: Check for company logo on login form
     Given the user is on login page
     Then the Company logo should be present in the login form
+
+  @functional @regression @smoke
+  Scenario: Initiate Forgot password flow
+    Given the user is on login page
+    When the user clicks on Forgot Username
+    Then the user should be navigated to the first page of forgot username flow
