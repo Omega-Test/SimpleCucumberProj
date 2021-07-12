@@ -55,7 +55,7 @@ public class Steps {
 
     @When("the user clicks on Forgot Username")
     public void the_user_clicks_on_forgot_username() {
-        System.out.println("The user clicked on forgot username link");
+        System.out.println("The user clicked on forgot username link::::::::::::::::");
     }
 
     @Then("the user should be navigated to the first page of forgot username flow")
