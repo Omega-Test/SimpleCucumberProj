@@ -60,6 +60,6 @@ public class Steps {
 
     @Then("the user should be navigated to the first page of forgot username flow")
     public void the_user_should_be_navigated_to_the_first_page_of_forgot_username_flow() {
-        System.out.println("The user is on verify and confirm email address for password reset page");
+        System.out.println("The user is on verify email address page of Recover/reset password flow");
     }
 }
