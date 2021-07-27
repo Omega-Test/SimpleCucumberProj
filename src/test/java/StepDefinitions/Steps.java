@@ -2,6 +2,7 @@ package StepDefinitions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,8 +10,11 @@ import io.cucumber.java.en.When;
 public class Steps {
 
     @Before
-    public void setup(){
+    public void setup(Scenario scenario){
         System.out.println("===========================================================");
+        System.out.println("Scenario name::" + scenario.getName());
+        System.out.println("Scenario tags::" + scenario.getSourceTagNames());
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
     }
 
     @After
@@ -61,5 +65,14 @@ public class Steps {
     @Then("the user should be navigated to the first page of forgot username flow")
     public void the_user_should_be_navigated_to_the_first_page_of_forgot_username_flow() {
         System.out.println("The user is on verify email address page of Recover/reset password flow");
+    }
+
+    @When("he enters user id as {string}")
+    public void he_enters_user_id_as(String string) {
+        System.out.println("The user ID is ::" + string);
+    }
+    @When("he enters password as {string}")
+    public void he_enters_password_as(String string) {
+        System.out.println("The password is::" + string);
     }
 }
